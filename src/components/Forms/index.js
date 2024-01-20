@@ -6,19 +6,10 @@ import { useState } from 'react'
 
 const Forms = (props) => {
 
-    const roles = [
-      'In Game Leader',
-      'Entry Fragger',
-      'Flank Watcher',
-      'Support Roles',
-      'Anchor',
-      'Roamers'
-    ]
-
     const [nickname, setNickname] = useState('')
     const [operator, setOperator] = useState('')
     const [image, setImage] = useState('')
-    const [role, setRole] = useState('')
+    const [role, setRole] = useState('In Game Leader')
 
     const whenSave = (events) => {
         events.preventDefault()
@@ -28,6 +19,10 @@ const Forms = (props) => {
             image,
             role
         })
+        setNickname('')
+        setOperator('')
+        setImage('')
+        setRole('')
     }
 
     return (
@@ -58,7 +53,7 @@ const Forms = (props) => {
                 <Dropdown 
                     mandatory={true} 
                     label="Role" 
-                    itens={roles}
+                    itens={props.roles}
                     value={role}
                     whenChanged={value => setRole(value)}
                     />
