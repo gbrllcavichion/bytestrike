@@ -48,14 +48,14 @@ function App() {
   return (
     <div className="App">
       <Banner/>
-      <Forms roles={roles.map(role => role.nickname)} whenPlayerSubmitted={player => whenNewPlayerAdded(player)}/>
+      <Forms roles={roles.map(role => role.name)} whenPlayerSubmitted={player => whenNewPlayerAdded(player)}/>
 
       {roles.map(role => <Role 
-        key={role.nickname} 
+        key={role.name} 
         nickname={role.nickname} 
         firstColor={role.firstColor} 
         secondColor={role.secondColor} 
-        players={players.filter(player => player.role === role.nickname)}
+        players={players.filter(player => player.role === role.name)}
       />)}   
 
     </div>
