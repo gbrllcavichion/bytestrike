@@ -13,7 +13,7 @@ const Field = (props) => {
             <label>
                 {props.label}
             </label>
-            <input value={props.value} onChange={whenTyped} required={props.mandatory} placeholder={props.changedPlaceholder}/>
+            <input value={props.value} onChange={whenTyped} required={props.mandatory} placeholder={changedPlaceholder}/>
         </div>
     )
 }
