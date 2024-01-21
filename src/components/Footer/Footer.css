@@ -1,0 +1,17 @@
+.footer-page {
+    background: #F6D582;
+    color: #FFF;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-page ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.footer-page ul li:last-child {
+    margin-right: 0;
+}
