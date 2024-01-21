@@ -52,7 +52,7 @@ function App() {
 
       {roles.map(role => <Role 
         key={role.name} 
-        nickname={role.nickname} 
+        nickname={role.name} 
         firstColor={role.firstColor} 
         secondColor={role.secondColor} 
         players={players.filter(player => player.role === role.name)}
