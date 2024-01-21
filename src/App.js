@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Role from './components/Role';
 import Banner from './components/Banner';
 import Forms from './components/Forms';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -58,6 +59,8 @@ function App() {
         players={players.filter(player => player.role === role.name)}
       />)}   
 
+      <Footer/>
+      
     </div>
   );
 }
