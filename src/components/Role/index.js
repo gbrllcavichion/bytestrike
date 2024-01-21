@@ -7,7 +7,7 @@ const Role = (props) => {
     return (
         (props.players.length > 0) ? <section className='role' style={css}>
             <h3 style={{ borderColor: props.firstColor}}>{props.nickname}</h3>
-            <div className='player'>
+            <div className='players'>
                 {props.players.map(player => <Player backgroudColorPlayer={props.firstColor} key={player.nickname} nickname={player.nickname} operator={player.operator} imagem={player.image}/>)}
             </div>
         </section>

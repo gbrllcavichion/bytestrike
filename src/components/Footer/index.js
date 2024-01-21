@@ -1,7 +1,7 @@
 import './Footer.css'
 
 const Footer = () => {
-    return(<footer className="footer">
+    return(<footer className="footer-page">
             <section>
                 <ul>
                    <li>
@@ -22,7 +22,7 @@ const Footer = () => {
                 </ul>
             </section>
             <section>
-                <img src="/images/logo.png"/>
+                <img src="/images/logo.png" alt="logo"/>
             </section>
             <section>
                 <p>
